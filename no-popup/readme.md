@@ -4,8 +4,7 @@ Just a popup catcher
 
 ## Installation
 
-* Install GreaseMonkey (Firefox) or TamperMonkey (Chrome)
-* Restart your browser
+* Install TamperMonkey
 * Install the script, [click here](https://raw.githubusercontent.com/Lcfvs/userscripts/master/no-popup/no-popup.user.js)
 
 ## Grant a site
