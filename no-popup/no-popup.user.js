@@ -6,16 +6,17 @@
 // @downloadURL https://raw.githubusercontent.com/Lcfvs/userscripts/master/no-popup/no-popup.user.js
 // @updateURL https://raw.githubusercontent.com/Lcfvs/userscripts/master/no-popup/no-popup.user.js
 // @namespace   any-site
-// @version     1.0.0
+// @version     1.0.1
 // @include     http*
 // @grant       GM_getValue
 // @grant       GM_setValue
+// @grant       unsafeWindow
 // @run-at document-start
 // ==/UserScript==
 (
   (
     global,
-    open = global.open,
+    open = unsafeWindow.open,
     Observer = global.MutationObserver,
     noop = a => null,
     demethodize = Function.bind.bind(Function.call),
@@ -38,7 +39,7 @@
     grant = a => (
       permissions[hostname] = true,
       GM_setValue('noPopup', stringify(permissions)),
-      global.open = open,
+      unsafeWindow.open = open,
       observer
       && disconnect(observer),
       console.log('granted')
@@ -46,7 +47,7 @@
     exclude = a => (
       permissions[hostname] = false,
       GM_setValue('noPopup', stringify(permissions)),
-      global.open = noop,
+      unsafeWindow.open = noop,
       observer = new Observer(mutations =>
         forEach(mutations, (mutation, key, mutations) =>
           (mutation.type === 'childList' || key === mutations.length - 1)
