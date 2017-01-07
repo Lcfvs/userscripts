@@ -4,6 +4,7 @@
 // @description To grant a site, press CTRL + SHIFT + G
 // @description To exclude a site, press CTRL + SHIFT + E
 // @downloadURL https://raw.githubusercontent.com/Lcfvs/userscripts/master/no-popup/no-popup.user.js
+// @updateURL https://raw.githubusercontent.com/Lcfvs/userscripts/master/no-popup/no-popup.user.js
 // @namespace   any-site
 // @version     1.0.0
 // @include     http*
