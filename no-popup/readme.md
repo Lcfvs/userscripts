@@ -4,7 +4,9 @@ Just a popup catcher
 
 ## Installation
 
-[Click here](https://raw.githubusercontent.com/Lcfvs/userscripts/master/no-popup/no-popup.user.js)
+Install GreaseMonkey (Firefox) or TamperMonkey (Chrome)
+Restart your browser
+Install the script, [click here](https://raw.githubusercontent.com/Lcfvs/userscripts/master/no-popup/no-popup.user.js)
 
 ## Grant a site
 
