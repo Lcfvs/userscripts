@@ -3,10 +3,11 @@
 // @description Just a popup catcher
 // @description To grant a site, press CTRL + SHIFT + G
 // @description To exclude a site, press CTRL + SHIFT + E
+// @author      Lcf.vs
 // @downloadURL https://raw.githubusercontent.com/Lcfvs/userscripts/master/no-popup/no-popup.user.js
 // @updateURL https://raw.githubusercontent.com/Lcfvs/userscripts/master/no-popup/no-popup.user.js
 // @namespace   any-site
-// @version     1.0.2
+// @version     1.0.3
 // @include     http*
 // @grant       GM_getValue
 // @grant       GM_setValue
