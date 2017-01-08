@@ -6,7 +6,7 @@
 // @downloadURL https://raw.githubusercontent.com/Lcfvs/userscripts/master/no-popup/no-popup.user.js
 // @updateURL https://raw.githubusercontent.com/Lcfvs/userscripts/master/no-popup/no-popup.user.js
 // @namespace   any-site
-// @version     1.0.1
+// @version     1.0.2
 // @include     http*
 // @grant       GM_getValue
 // @grant       GM_setValue
