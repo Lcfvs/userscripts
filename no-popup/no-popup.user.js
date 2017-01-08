@@ -57,11 +57,14 @@
       observe(observer, global.document.documentElement, rules),
       console.log('excluded')
   )) => (
-    global.document.addEventListener('keyup', event =>
-      event.shiftKey
-      && event.ctrlKey
-      && ((event.keyCode === 71 && grant()) || (event.keyCode === 69 && exclude()))
-    ),
-    permissions[hostname] || exclude()
+    global.document.documentElement
+    && (
+      global.document.addEventListener('keyup', event =>
+        event.shiftKey
+        && event.ctrlKey
+        && ((event.keyCode === 71 && grant()) || (event.keyCode === 69 && exclude()))
+      ),
+      permissions[hostname] || exclude()
+    )
   )
 )(this.window);
